@@ -5,17 +5,17 @@ var options={
     username:"mqtt",
     password:"password",
     clean:true};
-var client  = mqtt.connect("mqtt://192.168.111.207",options);
+var client  = mqtt.connect("mqtt://localhost",options);
 console.log("connected flag  " + client.connected);
 
 // mysql
 var mysql      = require('mysql');
 var connection = mysql.createPool({
   connectionLimit : 10,
-  host            : '192.168.111.207',
+  host            : '*******',
   user            : 'root',
-  password        : '159357',
-  database        : 'mwa_waterlevel'
+  password        : '*******',
+  database        : '******'
 });
 
 
